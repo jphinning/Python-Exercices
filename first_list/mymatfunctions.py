@@ -21,3 +21,29 @@ def multiplica_matriz_escalar(escalar, m):
             m[i][j] *= escalar 
     
     return m
+
+def maior_matriz(m):
+    maior_valor = m[0][0]
+    for i in range(len(m)):
+        for j in range(len(m[i])):
+            if(maior_valor < m[i][j]):
+                maior_valor = m[i][j]
+
+    return maior_valor
+
+def menor_matriz(m):
+    menor_valor = m[0][0]
+    for i in range(len(m)):
+        for j in range(len(m[i])):
+            if(menor_valor > m[i][j]):
+                menor_valor = m[i][j]
+
+    return menor_valor
+
+def matriz_soma(m):
+    soma = 0
+    for i in range(len(m)):
+        for j in range(len(m[i])):
+            soma += m[i][j]  
+
+    return soma
