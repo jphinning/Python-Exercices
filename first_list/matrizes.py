@@ -24,7 +24,17 @@ def multiplicar_matriz_por_escalar():
     ma = cria_mat(m, n)
     ler_matriz("Matriz", ma)
     mr = multiplica_matriz_escalar(escalar, ma)
-    print(mr)
+    imprime_mat("Matriz Resultante", mr)
+
+def maior_menor_soma():
+    m, n = ler_dimensao("Matriz")
+    ma = cria_mat(m, n)
+    ler_matriz("Matriz", ma)
+    soma = matriz_soma(ma)
+    maior_valor = maior_matriz(ma)
+    menor_valor = menor_matriz(ma)
+    imprime_mat("Matriz ", ma)
+    print(f'Soma: {soma} \nMaior Valor: {maior_valor} \nMenor Valor: {menor_valor} ')
 
 # vem a main da "aplicação"
 # menu
@@ -46,11 +56,11 @@ while opcao != 0:
         # CHAMAR O EQUIVALENTE DO NUMPY E MOSTRAR OS RESULTADOS PARA COMPARAR
     elif opcao == 2:
         multiplicar_matriz_por_escalar()
-        # segue com as diversar opções solicitas
-        # os algoritmos, sem interação com usuário, devem virar funções no módulo mymatfunctions
-        # eventuais funções reutilizáveis com alguma interação deverm ser incluídos em mymatutils
-        # o corpo da função escolhida deve vir neste script
-        # (ver como foi distribuída a multiplicação de matrizes)
     elif opcao == 3:
+        maior_menor_soma()
+    elif opcao == 4:
         print ("Escolheu tres")
-        
+    elif opcao == 5:
+        print ("Escolheu tres")
+    elif opcao == 6:
+        print ("Escolheu tres")
