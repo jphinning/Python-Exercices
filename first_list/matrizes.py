@@ -18,6 +18,14 @@ def multiplicacao_matrizes():
     else:
         print(f"Coluna de A {n} é diferente da linha de B {o}. Não posso multiplicar!")
 
+def multiplicar_matriz_por_escalar():
+    escalar = ler_escalar()
+    m, n = ler_dimensao("Matriz")
+    ma = cria_mat(m, n)
+    ler_matriz("Matriz", ma)
+    mr = multiplica_matriz_escalar(escalar, ma)
+    print(mr)
+
 # vem a main da "aplicação"
 # menu
 opcao = 1
@@ -37,11 +45,12 @@ while opcao != 0:
         multiplicacao_matrizes()
         # CHAMAR O EQUIVALENTE DO NUMPY E MOSTRAR OS RESULTADOS PARA COMPARAR
     elif opcao == 2:
-        print ("Escolheu dois")
+        multiplicar_matriz_por_escalar()
         # segue com as diversar opções solicitas
         # os algoritmos, sem interação com usuário, devem virar funções no módulo mymatfunctions
         # eventuais funções reutilizáveis com alguma interação deverm ser incluídos em mymatutils
         # o corpo da função escolhida deve vir neste script
         # (ver como foi distribuída a multiplicação de matrizes)
     elif opcao == 3:
+        print ("Escolheu tres")
         

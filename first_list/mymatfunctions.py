@@ -14,3 +14,10 @@ def multiplica_matriz(ma, mb):
             for k in range(len(mb)):
                 mr[i][j] = mr[i][j] + ma[i][k] * mb[k][j]
     return mr
+
+def multiplica_matriz_escalar(escalar, m):
+    for i in range(len(m)):
+        for j in range(len(m[i])):
+            m[i][j] *= escalar 
+    
+    return m

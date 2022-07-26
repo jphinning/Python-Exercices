@@ -19,3 +19,8 @@ def ler_dimensao(titulo):
     qtde_linhas = int(input(f"Qtde de linhas da {titulo}: "))
     qtde_colunas = int(input(f"Qtde de colunas da {titulo}: "))
     return qtde_linhas, qtde_colunas # monta a tupla (linhas, colunas)
+
+def ler_escalar():
+    escalar = int(input('Forneça o escalar: '))
+    
+    return escalar
