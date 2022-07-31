@@ -36,6 +36,28 @@ def maior_menor_soma():
     imprime_mat("Matriz ", ma)
     print(f'Soma: {soma} \nMaior Valor: {maior_valor} \nMenor Valor: {menor_valor} ')
 
+def det_Sarrus():
+    ma = cria_mat(3, 3)
+    ler_matriz("Matriz 3x3", ma)
+    det = regra_Sarrus(ma)
+    imprime_mat("Matriz ", ma)
+    print(f'Determinante: {det} \n')
+
+def det_Laplace():
+    ma = cria_mat(4, 4)
+    ler_matriz("Matriz 4x4", ma)
+    det = regra_Laplace(ma)
+    imprime_mat("Matriz ", ma)
+    print(f'Determinante: {det} \n')
+
+def transposta():
+    m, n = ler_dimensao("Matriz")
+    ma = cria_mat(m, n)
+    ler_matriz("Matriz", ma)
+    mt = retorna_transposta(ma)
+    imprime_mat("Matriz Transposta ", mt)
+
+
 # vem a main da "aplicação"
 # menu
 opcao = 1
@@ -59,8 +81,8 @@ while opcao != 0:
     elif opcao == 3:
         maior_menor_soma()
     elif opcao == 4:
-        print ("Escolheu tres")
+        det_Sarrus()
     elif opcao == 5:
-        print ("Escolheu tres")
+        det_Laplace()
     elif opcao == 6:
-        print ("Escolheu tres")
+        transposta()
