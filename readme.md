@@ -1,39 +1,23 @@
-'''
+## Numerical Methods in Python
+ - List of Exercises I
 
-- Lista de Exercícios I -
-- Individual
+Exercise: Complete the matrices.py script, using and expanding the mymatfunctions and mymatutils modules in order to complete the following matrix operations menu:
 
-Exercício:
-Completar o script matrizes.py, usando e ampliando os módulos mymatfunctions e mymatutils
-de modo a completar o seguinte menu de operações sobre matrizes:
+0) exit the program
 
-0. sair do programa
+1) matrix multiplication A (k, l) * B (m, n) using Python (without libraries) comparing with numpy multiplication: mR = mA @ mB or mR = mA.dot (mB)
 
-1. multiplacao de matrizes A(k, l) \* B (m, n) usando Python (sem bibliotecas)
-   comparando com multiplicação do numpy: mR = mA @ mB ou mR = mA.dot(mB)
+2) multiply matrix by scalar
 
-2. multiplicar matriz por escalar
+3) calculate and display Greatest, smallest and sum of matrix elements Make separate functions for matrix_min, matrix_max and matrix_sum Comparing with min(), max() and sum() (show or result of these)
 
-3. calcular e mostrar Maior, menor e soma dos elementos da matriz
-   Fazer funções separadas para min_matriz, max_matriz e soma_matriz
-   Comparando com min(), max() e sum() (mostrar o resultado destes)
+4) matrix determinant (3x3) using Python (implement Sarrus Rule) show or result with numpy's det function (from numpy.linalg import det)
 
-4. determinante de matriz (3x3) usando Python (implementar Regra de Sarrus)
-   mostrar o resultado com função det do numpy (from numpy.linalg import det)
+5) determinant of the 4x4 matrix using Python (using or Laplace's Theorem) Employ the function that calculates the det A (3 x 3) made for the previous item. Ditto, show the result with numpy
 
-5. determinante de matriz 4x4 usando Python (usando o Teorema de Laplace)
-   Empregar a função que calcula o det A(3 x 3) feito para o item anterior.
-   Idem, mostrar resultado com numpy
+6) matrix transpose creating a function in Python that returns the transpose Being the matrix A = Aij (m x n) the transpose of A is At = A'ji (n x m). Show or transpose() result from numpy.
 
-6. transposta de matriz criando função em Python que devolve a transposta
-   Sendo a matriz A = Aij(m x n) a transposta de A é At = A’ji(n x m).
-   Mostar o resultado da transpose() do numpy.
+In all cases, calculate with discrete Python code and also calculate with respective numpy functions, showing both values.
 
-Em todos os casos, calcula com código discreto em Python e também
-calcular com a respectiva função do numpy, mostrando os dois valores.
+When using numpy, create the np.array array from the python list using the functions in class (np.array, do not retype or reread the array) Ditto for the determinant (3x3)
 
-Ao usar numpy, criar matriz np.array a partir da list python
-usando das funções vistas em aula (np.array, não redigitar ou reler a matriz)
-Idem par o determinante (3x3)
-
-'''
